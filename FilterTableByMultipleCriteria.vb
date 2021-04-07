@@ -4,8 +4,9 @@ Sub filerTableByList()
 
     Dim tableColRNG As Range
     Set tableColRNG = Application.InputBox("Select a Cell to Which to Apply the Criteria", "Obtain Range Object", Type:=8)
+    
         'Get column number and table name.
-        'TODO: Add On Error, in case there is no table.
+        'TODO: Add Error Handling in case there is no table.
         Dim tableName As String
         tableName = tableColRNG.ListObject
         Dim colNum As Integer
