@@ -26,5 +26,3 @@ Sub filerTableByList()
     
     ActiveSheet.ListObjects(tableName).Range.AutoFilter Field:=colNum, Criteria1:=sArray, Operator:=xlFilterValues
 End Sub
-
-
